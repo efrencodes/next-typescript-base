@@ -4,3 +4,5 @@ data
 node_modules
 public
 .eslintrc.js
+next.config.js
+prettier.config.js

@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](https://github.com/efrencodes/efrencodes/blob/master/assets/repos/next-typescript-base.png)
 
-## Getting Started
+### 🎯 Used technologies:
 
-First, run the development server:
+-   Next.JS
+-   TypeScript
+-   Eslint
+-   Prettier
+-   [Module CSS](https://nextjs.org/docs/basic-features/built-in-css-support)
+-   [Config of Typescript](https://github.com/efrencodes/next-typescript-base/blob/master/.eslintrc.js)
+-   [Config of Prettier](https://github.com/efrencodes/next-typescript-base/blob/master/prettier.config.js)
+
+### ⚙️ How To Use
+
+To clone and run this application, you'll need **GIT** and **NodeJS** (which comes with npm) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
+  # Clone this repository
+  $ git clone https://github.com/efrencodes/next-typescript-base.git
+
+  # Go into the repository
+  $ cd next-typescript-base
+
+  # Install dependencies
+  $ npm install
+
+  # Run the app
+  $ npm run start
+
+  # Open in browser
+  # http://localhost:3005/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🎨 Format code with Prettier
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  # Format code
+  $ npm run format
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  # output
+> next-typescript-base@0.1.0 format
+> prettier --write '{*.tsx,*.js,*.css,pages/**/*,styles/**/*.{tsx,css,js}}'
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+pages/_app.tsx 14ms
+pages/api/hello.js 10ms
+pages/index.tsx 16ms
+styles/globals.css 17ms
+styles/Home.module.css 10ms
+```
 
-## Learn More
+### 🚩 Lint project
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  # Lint
+  $ npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🚀 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To deploy this project run
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-npm install prettier eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-prettier
+```bash
+  # Build
+  $ npm run build
+```

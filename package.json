@@ -1,27 +1,44 @@
 {
-  "name": "crytoapp",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.39",
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1",
-    "typescript": "^4.6.2"
-  }
+    "name": "next-typescript-base",
+    "author": "efrencodes <efrencodes@gmail.com> (https://efrencodes.com)",
+    "version": "0.1.0",
+    "description": "Minimal project with Next.js and TypeScript",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/efrencodes/next-typescript-base.git"
+    },
+    "keywords": [
+        "next",
+        "nextjs",
+        "typescript",
+        "base"
+    ],
+    "bugs": {
+        "url": "https://github.com/efrencodes/next-typescript-base/issues"
+    },
+    "homepage": "https://github.com/efrencodes/next-typescript-base#readme",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write '{*.tsx,*.js,*.css,pages/**/*,styles/**/*.{tsx,css,js}}'"
+    },
+    "dependencies": {
+        "next": "12.1.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@types/react": "^17.0.39",
+        "eslint": "8.10.0",
+        "eslint-config-next": "12.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.5.1",
+        "typescript": "^4.6.2"
+    }
 }
